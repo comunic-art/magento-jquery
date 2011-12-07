@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<default>
+		<reference name="head">
+        <action method="addItem" ifconfig="jquery/general/enabled">
+          <type>skin_js</type>
+          <name>js/comunicart/jquery/jquery-1.6.4.min.js</name>
+	      </action>
+        <action method="addItem" ifconfig="jquery/general/enabled">
+          <type>skin_js</type>
+          <name>js/comunicart/jquery/jquery.init.js</name>
+	      </action>
+        
+        <!-- Colorbox -->
+    	 	<action method="addItem" ifconfig="jquery/plugins/colorbox">
+    	 		<type>skin_js</type>
+	    	 	<name>js/comunicart/jquery/jquery.colorbox-1.3.17.min.js</name>
+	    	</action>
+	    	<block type="jquery/colorbox" name="colorbox" />
+        
+        <!-- jQZoom -->
+    	 	<action method="addItem" ifconfig="jquery/plugins/jqzoom">
+    	 		<type>skin_js</type>
+	    	 	<name>js/comunicart/jquery/jqzoom/jquery.jqzoom-core-pack.js</name>
+	    	</action>
+    	 	<action method="addItem" ifconfig="jquery/plugins/jqzoom">
+    	 		<type>skin_css</type>
+	    	 	<name>css/comunicart/jquery/jqzoom/jquery.jqzoom.css</name>
+	    	</action>
+    	 	<action method="addItem" ifconfig="jquery/jqzoom/colorbox">
+    	 		<type>skin_js</type>
+	    	 	<name>js/comunicart/jquery/jquery.colorbox-1.3.17.min.js</name>
+	    	</action>
+        <block type="jquery/jqzoom" name="jqzoom" />
+		</reference>
+	</default>
+
+  <!-- Colorbox -->
+	<catalog_product_view>
+		<reference name="product.info.media">
+			<action method="setTemplate" ifconfig="jquery/plugins/colorbox"><template>comunicart/jquery/colorbox/media.phtml</template></action>
+		</reference>
+	</catalog_product_view>
+	
+	<review_product_list>
+    <reference name="product.info.media">
+			<action method="setTemplate" ifconfig="jquery/plugins/colorbox"><template>comunicart/jquery/colorbox/media.phtml</template></action>
+			<action method="disableGallery"/>
+		</reference>
+  </review_product_list>
+  
+  <!-- jQZoom -->
+	<catalog_product_view>
+		<reference name="product.info.media">
+			<action method="setTemplate" ifconfig="jquery/plugins/jqzoom"><template>comunicart/jquery/jqzoom/media.phtml</template></action>
+		</reference>
+	</catalog_product_view>
+	
+	<review_product_list>
+    <reference name="product.info.media">
+			<action method="setTemplate" ifconfig="jquery/plugins/jqzoom"><template>comunicart/jquery/jqzoom/media.phtml</template></action>
+			<action method="disableGallery"/>
+		</reference>
+  </review_product_list>
+</layout>

@@ -1,0 +1,416 @@
+<?xml version="1.0"?>
+ <config>
+	<tabs>
+		<comunicart translate="label">
+			<label>Comunic-art</label>
+			<sort_order>400</sort_order>
+		</comunicart>
+	</tabs>
+    <sections>
+        <jquery translate="label" module="jquery">
+            <label>jQuery</label>
+            <tab>comunicart</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>90</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>jQuery Library</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                    </fields>
+                </general>
+                <plugins translate="label">
+                    <label>jQuery Plugins</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <colorbox translate="label">
+                            <label>Colorbox</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </colorbox>
+                        <jqzoom translate="label">
+                            <label>jQZoom</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </jqzoom>
+                    </fields>
+                </plugins >
+                <colorbox translate="label">
+                    <label>Colorbox</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <style translate="label comment">
+                            <label>Style</label>
+                            <comment>CSS style to use. See &lt;a href="http://colorpowered.com/colorbox/" target="_blank"&gt;Colorbox homepage&lt;/a&gt; to see the differents styles.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>jquery/colorbox_config_source_style</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </style>
+                        <transition translate="label comment">
+                            <label>Transition</label>
+                            <comment>The transition type.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>jquery/colorbox_config_source_transition</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </transition>
+                        <speed translate="label comment">
+                            <label>Speed</label>
+                            <comment>Sets the speed of the fade and elastic transitions, in milliseconds.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </speed>
+                        <width translate="label comment">
+                            <label>Width</label>
+                            <comment>Set a fixed total width. This includes borders and buttons. Example: "100%", "500px", or 500.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </width>
+                        <height translate="label comment">
+                            <label>Height</label>
+                            <comment>Set a fixed total height. This includes borders and buttons. Example: "100%", "500px", or 500.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </height>
+                        <opacity translate="label comment">
+                            <label>Opacity</label>
+                            <comment>The overlay opacity level. Range: 0 to 1.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </opacity>
+                        <loop translate="label comment">
+                            <label>Loop</label>
+                            <comment>If "No", will disable the ability to loop back to the beginning of the group when on the last element.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </loop>
+                        <slideshow translate="label comment">
+                            <label>Slideshow</label>
+                            <comment>If "Yes", adds an automatic slideshow to a content group / gallery.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slideshow>
+                        <slideshow_speed translate="label comment">
+                            <label>Slideshow speed</label>
+                            <comment>Sets the speed of the slideshow, in milliseconds.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <sort_order>35</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slideshow_speed>
+                        <slideshow_auto translate="label comment">
+                            <label>Slideshow automatic start</label>
+                            <comment>If "Yes", the slideshow will automatically start to play.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>35</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slideshow_auto>
+                        <slideshow_start translate="label comment">
+                            <label>Slideshow start label</label>
+                            <comment>Text for the slideshow start button.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slideshow_start>
+                        <slideshow_stop translate="label comment">
+                            <label>Slideshow stop label</label>
+                            <comment>Text for the slideshow stop button.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>45</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slideshow_stop>
+                        <current translate="label comment">
+                            <label>Current label</label>
+                            <comment>Text format for the content group / gallery count. {current} and {total} are detected and replaced with actual numbers while ColorBox runs.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </current>
+                        <previous translate="label comment">
+                            <label>Previous label</label>
+                            <comment>Text for the previous button in a shared relation group (same values for 'rel' attribute).</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>55</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </previous>
+                        <next translate="label comment">
+                            <label>Next label</label>
+                            <comment>Text for the next button in a shared relation group (same values for 'rel' attribute).</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </next>
+                        <close translate="label comment">
+                            <label>Close label</label>
+                            <comment>Text for the close button. The 'Esc' key will also close ColorBox.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </close>
+                        <arguments>
+                            <label>Arguments</label>
+                            <comment>Arguments to place inside $.colorbox(). This field replaces previous defined options.</comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>65</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </arguments>  
+                    </fields>
+                </colorbox >
+                <jqzoom translate="label">
+                    <label>jQZoom</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <colorbox translate="label comment">
+                            <label>Integrate Colorbox</label>
+                            <comment>Large image will be show in Colorbox dialog on clicking.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </colorbox>
+                        <zoom_type translate="label comment">
+                            <label>Zoom type</label>
+                            <comment>The zoom type.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>jquery/jqzoom_config_source_zoomtype</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </zoom_type>
+                        <zoom_width translate="label comment">
+                            <label>Zoom width</label>
+                            <comment>The popup window width showing the zoomed area.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </zoom_width>
+                        <zoom_height translate="label comment">
+                            <label>Zoom height</label>
+                            <comment>The popup window height showing the zoomed area.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </zoom_height>
+                        <x_offset translate="label comment">
+                            <label>X offset</label>
+                            <comment>The popup window x offset from the small image. (always positive to move the popup window more on the right if position is "right" or more on the left if position is "left").</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </x_offset>
+                        <y_offset translate="label comment">
+                            <label>Y offset</label>
+                            <comment>The popup window y offset from the small image. (always positive to move the popup window more on the top if position is "top" or more on the bottom if position is "bottom").</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </y_offset>
+                        <position translate="label comment">
+                            <label>Position</label>
+                            <comment>The popup window position.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>jquery/jqzoom_config_source_position</source_model>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </position>
+                        <preload_images translate="label comment">
+                            <label>Preload images</label>
+                            <comment>Preload large images.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </preload_images>
+                        <preload_text translate="label comment">
+                            <label>Preload text</label>
+                            <comment>The text to show while preloading images.</comment>
+                             <frontend_type>text</frontend_type>
+                            <sort_order>35</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </preload_text>
+                        <title translate="label comment">
+                            <label>Title</label>
+                            <comment>Show a small title over the zoomed window it can be the anchor title and if not specified, it will get the small image title.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title>
+                        <lens translate="label comment">
+                            <label>Lens</label>
+                            <comment>Show small lens over the image.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>45</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </lens>
+                        <image_opacity translate="label comment">
+                            <label>Image opacity</label>
+                            <comment>Set the image opacity when the 'Zoom type' option is set to 'Reverse'.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_opacity>
+                        <show_effect translate="label comment">
+                            <label>Show effect</label>
+                            <comment>The effect by which showing the popup window.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>jquery/jqzoom_config_source_showeffect</source_model>
+                            <sort_order>55</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </show_effect>
+                        <hide_effect translate="label comment">
+                            <label>Hide effect</label>
+                            <comment>The effect by which hiding the popup window.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>jquery/jqzoom_config_source_hideeffect</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </hide_effect>
+                        <fadein_speed translate="label comment">
+                            <label>Fade in speed</label>
+                            <comment>Changes fade in speed, in case the 'Show effect' option is set to 'Fade in'. (options: 'fast', 'slow', number).</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>65</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </fadein_speed>
+                        <fadeout_speed translate="label comment">
+                            <label>Fade out speed</label>
+                            <comment>Changes fade out speed, in case the 'Hide effect' option is set to 'Fade out'. (options: 'fast', 'slow', number).</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </fadeout_speed>
+                        <arguments>
+                            <label>Arguments</label>
+                            <comment>Arguments to place inside $.jqzoom(). This field replaces previous defined options.</comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>75</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </arguments> 
+                    </fields>
+                </jqzoom >
+            </groups>
+        </jquery>
+    </sections>
+</config>
