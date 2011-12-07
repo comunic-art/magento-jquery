@@ -1,0 +1,29 @@
+DESCRIPTION
+===========
+
+This Magento extension integrates jQuery and provides a group of useful plugins.
+
+
+PLUGINS
+=======
+
+- Colorbox (http://jacklmoore.com/colorbox/)
+- jQZoom (http://www.mind-projects.it/projects/jqzoom/)
+
+
+COMPATIBILITY
+=============
+
+This extension has been tested on Magento 1.6.
+
+
+INSTALLATION
+============
+
+Just copy files to Magento installation directory. Cache refreshing may be needed.
+
+
+CONFIGURATION
+=============
+
+To configure the plugins parameters visit Administration > System > Settings > Comunic-art > jQuery
